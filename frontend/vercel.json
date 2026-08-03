@@ -1,8 +1,5 @@
-cd C:\Users\admin\Desktop\textile-marketplace\frontend
-@"
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
-"@ | Out-File -FilePath vercel.json -Encoding utf8
