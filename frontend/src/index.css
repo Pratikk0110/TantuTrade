@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@theme {
+  --color-canvas: #F6F3EC;
+  --color-canvas-dim: #ECE7DA;
+  --color-ink: #151B3D;
+  --color-ink-soft: #2B3163;
+  --color-charcoal: #2A2622;
+  --color-saffron: #D9A441;
+  --color-saffron-dark: #B9862E;
+  --color-thread-red: #A23E3E;
+  --color-thread-green: #4C6B4F;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Stitched "cutting line" divider used throughout as a signature motif */
+.stitch-divider {
+  border-top: 1.5px dashed rgba(21, 27, 61, 0.3);
+}
+
+/* Shade-card style swatch dot */
+.swatch-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  border: 1.5px solid rgba(21,27,61,0.25);
+  display: inline-block;
+}
+
+::selection { background: var(--color-saffron); color: var(--color-ink); }
